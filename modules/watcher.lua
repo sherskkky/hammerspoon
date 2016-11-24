@@ -57,9 +57,10 @@ caffeinateWatcher = hs.caffeinate.watcher.new(function(event)
 end):start()
 
 -- auto reload
--- TODO:
 -- 加个计时器 防止频繁加载
-myWatcher = hs.pathwatcher.new(os.getenv('HOME') .. '/.hammerspoon/', reload):start()
+hs.timer.delayed.new(1 * 60, function()
+    myWatcher = hs.pathwatcher.new(os.getenv('HOME') .. '/.hammerspoon/', reload):start()
+end):start()
 
 --[[
 -- TODO:

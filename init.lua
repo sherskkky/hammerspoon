@@ -7,6 +7,21 @@
 hyper = { 'ctrl', 'alt', 'cmd' }
 hyperShift = { 'ctrl', 'alt', 'cmd', 'shift' }
 
+key2App = {
+    d = 'Dash',
+    e = 'Evernote',
+    f = 'Finder',
+    i = 'iTerm',
+    p = 'PhpStorm',
+    c = 'charles',
+    w = 'Wechat',
+    q = 'QQ',
+    m = 'Mweb',
+    s = 'Safari',
+    b = 'Google Chrome Canary',
+    t = 'Postman',
+}
+
 -- app input methods
 appMethods = {
     ['com.google.Chrome.canary'] = 1,
